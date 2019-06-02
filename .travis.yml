@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t jrogatis/frontEndDockerComposeEx -f Dockerfile.dev .
+  - docker build -t jrogatis/frontend -f Dockerfile.dev .
 
 script:
-  - docker run jrogatis/frontEndDockerComposeEx npm run test -- --coverage
+  - docker run jrogatis/frontend npm run test -- --coverage
