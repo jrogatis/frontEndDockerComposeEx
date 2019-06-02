@@ -6,4 +6,4 @@ before_install:
   - docker build -t jrogatis/frontend -f Dockerfile.dev .
 
 script:
-  - docker run jrogatis/frontend npm run test -- --coverage --forceExit
+  - docker run jrogatis/frontend npm run test -- --coverage -- --forceExit
